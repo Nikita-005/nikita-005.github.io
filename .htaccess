@@ -1,6 +1,6 @@
 Options +FollowSymLinks
 RewriteEngine On
-RewriteCond %{HTTP_HOST} www.nikita-005.github\.io$ [NC]
+RewriteCond %{HTTP_HOST} ^www.nikita-005.github\.io$ [NC]
 RewriteRule ^(.*)$ https://nikita-005.github.io/$1 [R=301,L]
 
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTPRewriteRule ^index\.php$ http://as-pushkin.ru/ [R=301,L]
